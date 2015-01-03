@@ -9,7 +9,7 @@
 
 import Foundation
 
-let TopAppURL = "http://ec2-54-86-111-95.compute-1.amazonaws.com:4000/Teams"
+let AUDL_server_url = "http://ec2-54-86-111-95.compute-1.amazonaws.com:4000/Teams"
 
 class DataManager {
   
@@ -33,13 +33,13 @@ class DataManager {
     loadDataTask.resume()
     }
     
-    class func getTopAppsDataFromItunesWithSuccess(success: ((iTunesData: NSData!) -> Void)) {
+    class func getUrlDataWithSuccess(success: ((WebData: NSData!) -> Void)) {
         //1
-        loadDataFromURL(NSURL(string: TopAppURL), completion:{(data, error) -> Void in
+        loadDataFromURL(NSURL(string: AUDL_server_url), completion:{(data, error) -> Void in
             //2
             if let urlData = data {
                 //3
-                success(iTunesData: urlData)
+                success(WebData: urlData)
             }
         })
     }

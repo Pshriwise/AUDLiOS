@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         // Get the #1 app name from iTunes and SwiftyJSON
-        DataManager.getTopAppsDataFromItunesWithSuccess { (iTunesData) -> Void in
+        DataManager.getUrlDataWithSuccess { (iTunesData) -> Void in
             let json = JSON(data: iTunesData)
             for i in 0...9 {
             if let TeamName = json[i][0].stringValue {
