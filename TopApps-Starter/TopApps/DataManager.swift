@@ -13,20 +13,6 @@ let TopAppURL = "http://ec2-54-86-111-95.compute-1.amazonaws.com:4000/Teams"
 
 class DataManager {
   
-  class func getTopAppsDataFromFileWithSuccess(success: ((data: NSData) -> Void)) {
-    //1
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), {
-      //2
-      let filePath = NSBundle.mainBundle().pathForResource("TopApps",ofType:"json")
-   
-      var readError:NSError?
-      let data = NSData(contentsOfFile:filePath!,
-        options: NSDataReadingOptions.DataReadingUncached,
-        error:&readError) 
-        success(data: data)
-    })
-  }
-  
   class func loadDataFromURL(url: NSURL, completion:(data: NSData?, error: NSError?) -> Void) {
     var session = NSURLSession.sharedSession()
     
