@@ -12,7 +12,6 @@
 		9240066919CABECA00371784 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9240066719CABECA00371784 /* Main.storyboard */; };
 		9240066B19CABECA00371784 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9240066A19CABECA00371784 /* Images.xcassets */; };
 		9240067A19CABECA00371784 /* TopAppsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9240067919CABECA00371784 /* TopAppsTests.swift */; };
-		9240068619CABF0A00371784 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9240068319CABF0A00371784 /* AppModel.swift */; };
 		9240068719CABF0A00371784 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9240068419CABF0A00371784 /* DataManager.swift */; };
 		9240068A19CABF1F00371784 /* TopApps.json in Resources */ = {isa = PBXBuildFile; fileRef = 9240068919CABF1F00371784 /* TopApps.json */; };
 		CD274DFC1A55C03F000757DC /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD274DFB1A55C03F000757DC /* SwiftyJSON.swift */; };
@@ -38,7 +37,6 @@
 		9240067319CABECA00371784 /* TopAppsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TopAppsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9240067819CABECA00371784 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9240067919CABECA00371784 /* TopAppsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopAppsTests.swift; sourceTree = "<group>"; };
-		9240068319CABF0A00371784 /* AppModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
 		9240068419CABF0A00371784 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		9240068919CABF1F00371784 /* TopApps.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TopApps.json; sourceTree = "<group>"; };
 		CD274DFB1A55C03F000757DC /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
@@ -86,7 +84,6 @@
 				9240068919CABF1F00371784 /* TopApps.json */,
 				9240066319CABECA00371784 /* AppDelegate.swift */,
 				02753C6A19E63FEF00208E21 /* ViewController.swift */,
-				9240068319CABF0A00371784 /* AppModel.swift */,
 				CD274DFB1A55C03F000757DC /* SwiftyJSON.swift */,
 				9240068419CABF0A00371784 /* DataManager.swift */,
 				9240066719CABECA00371784 /* Main.storyboard */,
@@ -222,7 +219,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				02753C6B19E63FEF00208E21 /* ViewController.swift in Sources */,
-				9240068619CABF0A00371784 /* AppModel.swift in Sources */,
 				9240066419CABECA00371784 /* AppDelegate.swift in Sources */,
 				CD274DFC1A55C03F000757DC /* SwiftyJSON.swift in Sources */,
 				9240068719CABF0A00371784 /* DataManager.swift in Sources */,
